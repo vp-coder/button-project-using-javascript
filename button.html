@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="mystyle.css">
+        <meta charset="UTF-8">
+
+    </head>
+    <body> 
+        <button class="my-button" onclick ="myfunction()" >START</button>
+        
+        
+        <script >
+            function myfunction(){
+                var sum=0;
+                var num=prompt("enter any number");
+                while(1){
+                    if(num<=10&&num>=1){
+                    sum+=2;
+                    var n1=prompt("wolla! awarded 2 point. Enter Y/ N to continue");
+                        if(n1=='Y'){
+                            continue;
+                        }
+                        else {
+                            alert(" total points awarded"+ " "+sum);
+                            break;
+                        }
+
+                    }
+                   
+                else{
+    
+                    alert("oops !  enter number between 1 to 10 .TRY AGAIN");
+                    break;
+
+                }
+                }    
+                
+            }
+        </script>
+
+    </body>
+</html>
